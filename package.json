@@ -1,8 +1,10 @@
 {
   "name": "console.gif",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Render gif in browser console",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "module": "dist/console.gif.ems.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/maddhruv/console.gif.git"
@@ -17,5 +19,11 @@
   "bugs": {
     "url": "https://github.com/maddhruv/console.gif/issues"
   },
-  "homepage": "https://github.com/maddhruv/console.gif#readme"
+  "homepage": "https://github.com/maddhruv/console.gif#readme",
+  "devDependencies": {
+    "tsdx": "^0.14.1"
+  },
+  "scripts": {
+    "build": "tsdx build --format cjs,esm,umd"
+  }
 }
